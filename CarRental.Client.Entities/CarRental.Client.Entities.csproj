@@ -47,9 +47,20 @@
   <ItemGroup>
     <Compile Include="Car.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rental.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Common\Core.Common.csproj">
+      <Project>{ba605e4c-f2f7-40f4-b4f6-edaccfed764c}</Project>
+      <Name>Core.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Contract\Core.Contract.csproj">
+      <Project>{3f0a1970-5c67-4783-bbda-ca3f2c0982ec}</Project>
+      <Name>Core.Contract</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
